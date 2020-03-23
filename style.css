@@ -1,0 +1,27 @@
+.card-in {
+    display: inline-block;
+    margin: auto 10px;
+}
+
+#mainIcon {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.low {
+    padding: 10px;
+    background-color: limegreen;
+}
+
+.moderate {
+    padding: 10px;
+    background-color: yellow;
+}
+
+.high {
+    padding: 10px;
+    background-color: orangered;
+}

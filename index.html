@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+          <div class="col-3">
+
+            <div class="input-group m-3">
+
+                <input type="text" class="form-control" id="citySearch" placeholder="Search city" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" id="searchCityButton" type="button">Search</button>
+                </div>
+
+            </div>
+
+          </div>
+
+          <!--Second Major Column including today's forecast as well as the 5-day forecast-->
+          <div class="col-9">
+
+            <!--Row that contains today's forecast-->
+            <div class="row">
+                <div class="card m-3" style="width: 70rem">
+                    <div class="card-body">
+                      <h5 class="card-title" id="nameDate">*City Name*+*Date*+*Weather Icon*</h5>
+                      <img class="car-img" id="mainIcon" src="" alt="weather-icon">
+                      <p class="card-text" id="temperature">*temperature*</p>
+                      <p class="card-text" id="humidity">*humidity*</p>
+                      <p class="card-text" id="windSpeed">*Wind Speed*</p>
+                      <p class="card-text" id="UVIndex">*UV Index*</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Row that contains the 5-day forecast-->
+            <div class="row">
+                <div class="card m-3" style="width: 70rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">5-Day Forecast</h5>
+
+
+                      <div class="card card-in" style="width: 11rem">
+                        <div class="card-body">
+                            <h6 class="card-title" id="date1">*Date+1*</h6>
+                            <img class="card-img" id="icon1" src="" alt="weather-icon">
+                            <p class="card-text" id="tempDay1">*temperature+1*</p>
+                            <p class="card-text" id="humDay1">*humidity+1*</p>
+                        </div>
+                      </div>
+
+                      <div class="card card-in" style="width: 11rem">
+                        <div class="card-body">
+                            <h6 class="card-title" id="date2">*Date+2*</h6>
+                            <img class="card-img" id="icon2" src="" alt="weather-icon">
+                            <p class="card-text" id="tempDay2">*temperature+2*</p>
+                            <p class="card-text" id="humDay2">*humidity+2*</p>
+                        </div>
+                      </div>
+
+                      <div class="card card-in" style="width: 11rem">
+                        <div class="card-body">
+                            <h6 class="card-title" id="date3">*Date+3*</h6>
+                            <img class="card-img" id="icon3" src="" alt="weather-icon">
+                            <p class="card-text" id="tempDay3">*temperature+3*</p>
+                            <p class="card-text" id="humDay3">*humidity+3*</p>
+                        </div>
+                      </div>
+
+                      <div class="card card-in" style="width: 11rem">
+                        <div class="card-body">
+                            <h6 class="card-title" id="date4">*Date+4*</h6>
+                            <img class="card-img" id="icon4" src="" alt="weather-icon">
+                            <p class="card-text" id="tempDay4">*temperature+4*</p>
+                            <p class="card-text" id="humDay4">*humidity+4*</p>
+                        </div>
+                      </div>
+
+                      <div class="card card-in" style="width: 11rem">
+                        <div class="card-body">
+                            <h6 class="card-title" id="date5">*Date+5*</h6>
+                            <img class="card-img" id="icon5" src="" alt="weather-icon">
+                            <p class="card-text" id="tempDay5">*temperature+5*</p>
+                            <p class="card-text" id="humDay5">*humidity+5*</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
