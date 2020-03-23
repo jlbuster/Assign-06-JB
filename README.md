@@ -12,4 +12,4 @@ Users can enter a city in the search bar on the left side of the application.
 
 Both the current weather and the 5-day forecast include an icon that displays the expected weather.
 
-Link : 
+Link : https://jlbuster.github.io/Assign-06-JB/
